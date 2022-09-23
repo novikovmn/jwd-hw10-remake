@@ -2,10 +2,10 @@ package by.epam.hw10.dragon_treasure.menu;
 
 import java.util.Scanner;
 
-import by.epam.hw10.dragon_treasure.controller.ApplicationResponse;
 import by.epam.hw10.dragon_treasure.controller.DragonCaveController;
 import by.epam.hw10.dragon_treasure.controller.OperationName;
-import by.epam.hw10.dragon_treasure.controller.UserRequest;
+import by.epam.hw10.dragon_treasure.controller.dto.ApplicationResponse;
+import by.epam.hw10.dragon_treasure.controller.dto.UserRequest;
 import by.epam.hw10.dragon_treasure.view.ConsoleOutput;
 
 public class UserMenu {
@@ -38,7 +38,7 @@ public class UserMenu {
 			switch (input) {
 			case 1: 
 				System.out.println("\tAll treasures:");
-				UserRequest request1 = new UserRequest(OperationName.SHOW_ALL.name());
+				UserRequest request1 = new UserRequest(OperationName.SELECT_ALL.name());
 				ApplicationResponse response1 = controller.run(request1);
 				output.printTreasures(response1.getTreasures());
 				break;

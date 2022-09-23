@@ -1,4 +1,4 @@
-package by.epam.hw10.dragon_treasure.controller;
+package by.epam.hw10.dragon_treasure.controller.dto;
 
 import java.util.List;
 

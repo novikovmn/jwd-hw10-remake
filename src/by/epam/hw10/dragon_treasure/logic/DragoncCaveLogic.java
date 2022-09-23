@@ -23,11 +23,11 @@ public class DragoncCaveLogic {
 	}
 		
 
-	public List<Treasure> showAllTreasures() {
+	public List<Treasure> selectAllTreasures() {
 		return dragonCave.getDragonTreasures();
 	}
 
-	public Treasure showMostExpensiveTreasure() {
+	public Treasure selectMostExpensiveTreasure() {
 		List<Treasure> treasures = dragonCave.getDragonTreasures();
 		Treasure result;
 
@@ -53,15 +53,22 @@ public class DragoncCaveLogic {
 		boolean flag = false;
 
 		while (!flag) {
+			
 			for (int i = 0; i < treasures.size(); i++) {
-				if (sum + treasures.get(i).getPrice() <= totalSum) {
-					result.add(treasures.get(i));
-					sum += treasures.get(i).getPrice();
+				
+				Treasure currentTreasure = treasures.get(i);
+				double currentTreasurePrice = treasures.get(i).getPrice();
+				double currentSum = sum + currentTreasurePrice;
+				
+				if (currentSum <= totalSum) {
+					result.add(currentTreasure);
+					sum += currentTreasurePrice;
 				} else {
 					flag = true;
 					break;
 				}
 			}
+			
 		}
 
 		return result;

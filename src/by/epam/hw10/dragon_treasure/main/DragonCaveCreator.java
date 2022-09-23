@@ -1,7 +1,10 @@
-package by.epam.hw10.dragon_treasure.bean;
+package by.epam.hw10.dragon_treasure.main;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import by.epam.hw10.dragon_treasure.bean.DragonCave;
+import by.epam.hw10.dragon_treasure.bean.Treasure;
 
 public class DragonCaveCreator {
 

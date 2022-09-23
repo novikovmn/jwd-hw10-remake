@@ -1,7 +1,7 @@
 package by.epam.hw10.dragon_treasure.dao;
 
 import by.epam.hw10.dragon_treasure.bean.DragonCave;
-import by.epam.hw10.dragon_treasure.bean.DragonCaveCreator;
+import by.epam.hw10.dragon_treasure.main.DragonCaveCreator;
 
 public class TreasureRepository {
 	

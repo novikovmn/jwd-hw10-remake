@@ -3,7 +3,7 @@ package by.epam.hw10.dragon_treasure.view;
 import java.util.List;
 
 import by.epam.hw10.dragon_treasure.bean.Treasure;
-import by.epam.hw10.dragon_treasure.controller.ApplicationResponse;
+import by.epam.hw10.dragon_treasure.controller.dto.ApplicationResponse;
 
 public class ConsoleOutput {
 	

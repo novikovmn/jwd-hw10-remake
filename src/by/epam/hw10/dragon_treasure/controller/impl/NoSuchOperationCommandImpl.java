@@ -1,9 +1,9 @@
 package by.epam.hw10.dragon_treasure.controller.impl;
 
-import by.epam.hw10.dragon_treasure.controller.ApplicationResponse;
 import by.epam.hw10.dragon_treasure.controller.Command;
 import by.epam.hw10.dragon_treasure.controller.OperationName;
-import by.epam.hw10.dragon_treasure.controller.UserRequest;
+import by.epam.hw10.dragon_treasure.controller.dto.ApplicationResponse;
+import by.epam.hw10.dragon_treasure.controller.dto.UserRequest;
 
 public class NoSuchOperationCommandImpl implements Command {
 

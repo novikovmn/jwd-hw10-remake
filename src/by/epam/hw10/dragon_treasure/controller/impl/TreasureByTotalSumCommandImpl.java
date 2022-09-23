@@ -3,9 +3,9 @@ package by.epam.hw10.dragon_treasure.controller.impl;
 import java.util.List;
 
 import by.epam.hw10.dragon_treasure.bean.Treasure;
-import by.epam.hw10.dragon_treasure.controller.ApplicationResponse;
 import by.epam.hw10.dragon_treasure.controller.Command;
-import by.epam.hw10.dragon_treasure.controller.UserRequest;
+import by.epam.hw10.dragon_treasure.controller.dto.ApplicationResponse;
+import by.epam.hw10.dragon_treasure.controller.dto.UserRequest;
 import by.epam.hw10.dragon_treasure.logic.DragoncCaveLogic;
 
 public class TreasureByTotalSumCommandImpl implements Command{
